@@ -22,33 +22,74 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="corvus.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="corvus.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/corvus.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="36" selection-start="880" selection-end="880" vertical-scroll-proportion="0.0">
+            <state line="58" column="6" selection-start="1291" selection-end="1291" vertical-scroll-proportion="0.24313186">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="documentStore.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test/documentStore.js">
+      <file leaf-file-name="dns.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/frameworks/node/lib/dns.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="3" selection-start="461" selection-end="461" vertical-scroll-proportion="0.44368133">
-              <folding>
-                <element signature="e#0#56#0" expanded="false" />
-              </folding>
+            <state line="258" column="22" selection-start="7110" selection-end="7110" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="manualtests.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/manualtests.js">
+      <file leaf-file-name="http.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/frameworks/node/lib/http.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="3" selection-start="97" selection-end="216" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#0#56#0" expanded="false" />
-              </folding>
+            <state line="1560" column="8" selection-start="42080" selection-end="42080" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="documentStoreInitTests.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/documentStoreInitTests.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="27" column="49" selection-start="975" selection-end="975" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="getDocumentTests.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/getDocumentTests.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="79" selection-start="765" selection-end="765" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="putDocumentTests.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/putDocumentTests.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="49" selection-start="306" selection-end="306" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NodeJSSymbols.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$APPLICATION_HOME_DIR$/plugins/NodeJS/lib/NodeJS.jar!/com/jetbrains/nodejs/NodeJSSymbols.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="4" selection-start="100" selection-end="100" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fs.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node_modules/mocha/test/fs.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -68,9 +109,15 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/corvus.js" />
         <option value="$PROJECT_DIR$/manualtests.js" />
         <option value="$PROJECT_DIR$/test/documentStore.js" />
+        <option value="$PROJECT_DIR$/test/connectionTests.js" />
+        <option value="$PROJECT_DIR$/test/docTests.js" />
+        <option value="$PROJECT_DIR$/test/documentStoreTests.js" />
+        <option value="$PROJECT_DIR$/test/documentStoreInitTests.js" />
+        <option value="$PROJECT_DIR$/test/getDocumentTests.js" />
+        <option value="$PROJECT_DIR$/test/putDocumentTests.js" />
+        <option value="$PROJECT_DIR$/corvus.js" />
       </list>
     </option>
   </component>
@@ -86,10 +133,46 @@
           <State>
             <id />
           </State>
+          <State>
+            <id>Assignment issuesJavaScript</id>
+          </State>
+          <State>
+            <id>Bitwise operation issuesJavaScript</id>
+          </State>
+          <State>
+            <id>Control flow issuesJavaScript</id>
+          </State>
+          <State>
+            <id>Error handlingJavaScript</id>
+          </State>
+          <State>
+            <id>General</id>
+          </State>
+          <State>
+            <id>GeneralJavaScript</id>
+          </State>
+          <State>
+            <id>JavaScript</id>
+          </State>
+          <State>
+            <id>JavaScript function metricsJavaScript</id>
+          </State>
+          <State>
+            <id>JavaScript validity issuesJavaScript</id>
+          </State>
+          <State>
+            <id>Potentially confusing code constructsJavaScript</id>
+          </State>
+          <State>
+            <id>Probable BugsJavaScript</id>
+          </State>
+          <State>
+            <id>XSLT</id>
+          </State>
         </expanded-state>
         <selected-state>
           <State>
-            <id>CSS</id>
+            <id>JSUnresolvedFunction</id>
           </State>
         </selected-state>
       </profile-state>
@@ -155,12 +238,60 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="Usage Scope" />
+    <property name="recentsLimit" value="5" />
+    <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.General" />
+    <property name="FullScreen" value="false" />
+    <property name="GoToClass.includeJavaFiles" value="false" />
     <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
   </component>
-  <component name="RunManager">
-    <list size="0" />
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/test" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Nodeunit.Debug Tests">
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node JS" coffeescript-run="false">
+      <method>
+        <option name="PhingTarget" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
+      <setting name="configLocationType" value="CONFIG_FILE" />
+      <setting name="settingsFile" value="" />
+      <setting name="serverType" value="INTERNAL" />
+      <method>
+        <option name="PhingTarget" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="NodeunitConfigurationType" factoryName="Nodeunit">
+      <setting name="nodePath" value="/usr/local/bin/node" />
+      <setting name="nodeunitModuleDir" value="" />
+      <setting name="workingDirectory" value="$PROJECT_DIR$" />
+      <setting name="testType" value="JS_FILE" />
+      <setting name="jsFile" value="$PROJECT_DIR$/test/documentStore.js" />
+      <method>
+        <option name="PhingTarget" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Local">
+      <JSDebuggerConfigurationSettings>
+        <option name="engineId" value="embedded" />
+        <option name="fileUrl" />
+      </JSDebuggerConfigurationSettings>
+      <method />
+    </configuration>
+    <configuration default="false" name="Debug Tests" type="NodeunitConfigurationType" factoryName="Nodeunit">
+      <setting name="nodePath" value="/usr/local/bin/mocha" />
+      <setting name="nodeunitModuleDir" value="$PROJECT_DIR$/node_modules" />
+      <setting name="workingDirectory" value="$PROJECT_DIR$" />
+      <setting name="testType" value="DIRECTORY" />
+      <setting name="directory" value="$PROJECT_DIR$/test" />
+      <method />
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="Nodeunit.Debug Tests" />
+    </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="SvnConfiguration" maxAnnotateRevisions="500">
@@ -214,13 +345,13 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24982357" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32956952" sideWeight="0.0" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="JsTestDriver Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="JsTestDriver Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -282,28 +413,57 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/corvus.js">
+    <entry file="file://$PROJECT_DIR$/node_modules/mocha/test/fs.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="36" selection-start="880" selection-end="880" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/frameworks/node/lib/dns.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="258" column="22" selection-start="7110" selection-end="7110" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/manualtests.js">
+    <entry file="file://$USER_HOME$/frameworks/node/lib/http.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="3" selection-start="97" selection-end="216" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#56#0" expanded="false" />
-          </folding>
+        <state line="1560" column="8" selection-start="42080" selection-end="42080" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/documentStore.js">
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/NodeJS/lib/NodeJS.jar!/com/jetbrains/nodejs/NodeJSSymbols.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="3" selection-start="461" selection-end="461" vertical-scroll-proportion="0.44368133">
-          <folding>
-            <element signature="e#0#56#0" expanded="false" />
-          </folding>
+        <state line="4" column="4" selection-start="100" selection-end="100" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/documentStoreInitTests.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="49" selection-start="975" selection-end="975" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/getDocumentTests.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="79" selection-start="765" selection-end="765" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/putDocumentTests.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="49" selection-start="306" selection-end="306" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/corvus.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="58" column="6" selection-start="1291" selection-end="1291" vertical-scroll-proportion="0.24313186">
+          <folding />
         </state>
       </provider>
     </entry>

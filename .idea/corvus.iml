@@ -5,6 +5,7 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Node.js" level="application" />
+    <orderEntry type="library" name="Jasmine adapter for JsTestDriver" level="application" />
   </component>
 </module>
 

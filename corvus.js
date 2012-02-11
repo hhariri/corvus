@@ -12,46 +12,72 @@ var sys = require('sys');
 var corvus = exports;
 
 
-corvus.DocumentStore = function DocumentStore(url) {
+corvus.DocumentStore = function DocumentStore(host, port, database) {
 
-    
-};
-
-corvus.DocumentStore.prototype.initialize = function () {
-
+    this.host = host;
+    this.port = port || 8080;
+    this.database = database || 'default';
 
 };
 
-corvus.DocumentStore.prototype.openSession = function () {
+corvus.DocumentStore.prototype.getDoc = function (docId, callback) {
 
-    return {
+    var options = {
+        host: this.host,
+        port: this.port,
+        path: docId,
+        method: 'GET'
+    };
+    var request = http.request(options, function (res) {
 
-        load: function (docId, callback) {
+        res.setEncoding('utf8');
 
-            var client = http.createClient(8080, '192.168.56.130');
+        res.on('data', function (chunk) {
+            if (res.statusCode === 200) {
+                callback(JSON.parse(chunk), null);
+            }
+            else {
+                callback(null, { 'StatusCode': res.statusCode, 'StatusMessage': chunk});
+            }
+        });
+    });
 
-            var request = client.request('GET', '/docs/albums/626', {'Host': '127.0.0.1'});
-
-
-            request.end();
-
-            request.on('response', function (response) {
-
-                response.setEncoding('utf8');
-
-                response.on('data', function (chunk) {
-
-                    callback(chunk);
-
-                });
-
-            });
-
-        }
-
-
-
-    }
+    request.on('error', function (error) {
+       callback(null, error);
+    });
+    request.end();
 
 };
 
+corvus.DocumentStore.prototype.putDoc = function (docId, doc, callback) {
+
+    var options = {
+        host: this.host,
+        port: this.port,
+        path: docId,
+        method: 'PUT'
+    };
+    var request = http.request(options, function (res) {
+
+        res.setEncoding('utf8');
+
+
+        res.on('data', function (chunk) {
+            if (res.statusCode === 201) {
+                callback(JSON.parse(chunk), null);
+            }
+            else {
+                callback(null, { 'StatusCode': res.statusCode, 'StatusMessage': chunk});
+            }
+        });
+    });
+
+    request.on('error', function (error) {
+       callback(null, error);
+    });
+
+    request.write(JSON.stringify(doc));
+    request.end();
+
+
+};
