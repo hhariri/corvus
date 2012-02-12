@@ -4,9 +4,9 @@ var corvus = require('../lib/corvus.js'),
 
 describe('Getting Documents', function () {
 
-    describe('when getting a document given a valid docId', function () {
+    describe('when getting a document that exists', function () {
 
-        it('should fire a callback with the valid document', function (done) {
+        it('should return the document', function (done) {
 
             var documentStore = new corvus.DocumentStore('192.168.56.130', 8080);
             documentStore.getDoc('/albums/626', function(doc, error) {
@@ -17,7 +17,7 @@ describe('Getting Documents', function () {
         });
     });
 
-    describe('when getting a document given an invalid docId', function () {
+    describe('when getting a document that does not exist', function () {
 
         it('should return 404 document not found', function (done) {
 

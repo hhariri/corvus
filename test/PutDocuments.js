@@ -3,9 +3,9 @@ var assert = require('assert');
 
 describe('Putting documents', function () {
 
-    describe('when putting a document with valid id and body', function () {
+    describe('when putting a document with valid Id and body', function () {
 
-        it('should return the document id', function (done) {
+        it('should return the document Id', function (done) {
 
             var documentStore = new corvus.DocumentStore('192.168.56.130', 8080);
             var doc = { Firstname: 'Joe', Lastname: 'Smith'};
@@ -18,13 +18,13 @@ describe('Putting documents', function () {
         });
 
     });
-    describe('when putting a document with invalid id', function () {
+    describe('when putting a document with invalid Id', function () {
 
         it('should return an error', function (done) {
             var documentStore = new corvus.DocumentStore('192.168.56.130', 8080);
             var doc = { Firstname: 'Joe', Lastname: 'Smith'};
             documentStore.putDoc('/docs', doc, function (docDetails, error) {
-                assert.equal(error.StatusCode, 400);
+                assert.equal(error.statusCode, 400);
                 done();
             });
 
