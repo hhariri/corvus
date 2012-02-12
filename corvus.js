@@ -19,7 +19,7 @@ corvus.DocumentStore = function DocumentStore(host, port, database) {
 
 };
 
-function Error (statusCode, statusMessage) {
+function Error(statusCode, statusMessage) {
     this.statusCode = statusCode;
     this.statusMessage = statusMessage;
     return this;
@@ -33,19 +33,17 @@ corvus.DocumentStore.prototype.getDoc = function (docId, callback) {
         if (docId.slice(0, '/docs'.length).toUpperCase() != '/DOCS') {
             if (docId.slice(0, 1) == '/') {
                 return '/docs' + docId;
-            } else {
-                return '/docs/' + docId;
             }
-        } else {
-            return docId;
+            return '/docs/' + docId;
         }
+        return docId;
     }
 
     var options = {
-        host: this.host,
-        port: this.port,
-        path: normalizeDocPath(docId),
-        method: 'GET'
+        host:this.host,
+        port:this.port,
+        path:normalizeDocPath(docId),
+        method:'GET'
     };
     var request = http.request(options);
 
@@ -73,7 +71,7 @@ corvus.DocumentStore.prototype.getDoc = function (docId, callback) {
     });
 
     request.on('error', function (error) {
-        callback(null, error);
+        callback(null, new Error(500, error));
     });
     request.end();
 
@@ -82,10 +80,10 @@ corvus.DocumentStore.prototype.getDoc = function (docId, callback) {
 corvus.DocumentStore.prototype.putDoc = function (docId, doc, callback) {
 
     var options = {
-        host: this.host,
-        port: this.port,
-        path: docId,
-        method: 'PUT'
+        host:this.host,
+        port:this.port,
+        path:docId,
+        method:'PUT'
     };
     var request = http.request(options, function (res) {
 
@@ -97,11 +95,11 @@ corvus.DocumentStore.prototype.putDoc = function (docId, doc, callback) {
                 callback(JSON.parse(chunk), null);
             }
             else {
-                callback(null, { 'StatusCode': res.statusCode, 'StatusMessage': chunk});
+                callback(null, { 'StatusCode':res.statusCode, 'StatusMessage':chunk});
             }
         });
         res.on('error', function (error) {
-           callback(null, error);
+            callback(null, error);
         });
     });
 
