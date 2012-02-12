@@ -32,4 +32,7 @@ Corvus does not have any dependencies other than nodejs and the mocha testing fr
 * Support for non-default database
 * More things...
 
+## License
+
+Licensed under MIT License @ http://github.com/hhariri/corvus/license.txt
 
