@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e366a52d-5f38-4059-a0a3-f06705f7d991" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/todo.txt" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/corvus.js" afterPath="$PROJECT_DIR$/corvus.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/getDocumentTests.js" afterPath="$PROJECT_DIR$/test/getDocumentTests.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/putDocumentTests.js" afterPath="$PROJECT_DIR$/test/putDocumentTests.js" />
     </list>
     <ignored path="corvus.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,10 +24,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="corvus.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="corvus.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/corvus.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="0" selection-start="1240" selection-end="1240" vertical-scroll-proportion="0.0">
+            <state line="60" column="20" selection-start="1441" selection-end="1441" vertical-scroll-proportion="0.33260393">
               <folding />
             </state>
           </provider>
@@ -74,10 +69,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="putDocumentTests.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="putDocumentTests.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/putDocumentTests.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="42" selection-start="646" selection-end="646" vertical-scroll-proportion="0.4573304">
+            <state line="9" column="48" selection-start="305" selection-end="305" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -123,9 +118,9 @@
         <option value="$PROJECT_DIR$/test/documentStoreTests.js" />
         <option value="$PROJECT_DIR$/test/documentStoreInitTests.js" />
         <option value="$PROJECT_DIR$/todo.txt" />
-        <option value="$PROJECT_DIR$/corvus.js" />
         <option value="$PROJECT_DIR$/test/getDocumentTests.js" />
         <option value="$PROJECT_DIR$/test/putDocumentTests.js" />
+        <option value="$PROJECT_DIR$/corvus.js" />
       </list>
     </option>
   </component>
@@ -491,13 +486,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/corvus.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="0" selection-start="1240" selection-end="1240" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/getDocumentTests.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="42" selection-start="511" selection-end="511" vertical-scroll-proportion="0.0">
@@ -507,7 +495,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/putDocumentTests.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="42" selection-start="646" selection-end="646" vertical-scroll-proportion="0.4573304">
+        <state line="9" column="48" selection-start="305" selection-end="305" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/corvus.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="20" selection-start="1441" selection-end="1441" vertical-scroll-proportion="0.33260393">
           <folding />
         </state>
       </provider>

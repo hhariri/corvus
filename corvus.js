@@ -19,7 +19,6 @@ corvus.DocumentStore = function DocumentStore(host, port, database) {
 
 };
 // TODO: Refactor to use common request method
-// TODO: Refactor to not require /docs/
 corvus.DocumentStore.prototype.getDoc = function (docId, callback) {
 
     function normalizeDocPath(docId) {
@@ -45,28 +44,24 @@ corvus.DocumentStore.prototype.getDoc = function (docId, callback) {
 
     request.on('response', function (response) {
 
-        var obj;
-        var error = false;
+        var body = "";
 
         response.setEncoding('utf8');
 
         response.on('data', function (chunk) {
 
-            try {
-                obj = JSON.parse(chunk);
-                error = false;
-            } catch (e) {
-                error = true;
-            }
+            body += chunk;
         });
 
-        // TODO: Improve this. Distinguish between bad parsing of JSON and other errors
         response.on('end', function () {
-            if (error || response.statusCode !== 200) {
-                callback(null, { statusCode: response.statusCode, statusMessage: response.statusMessage});
-            } else {
-                callback(obj, null);
+            if (response.statusCode === 200) {
+                try {
+                    return callback(JSON.parse(body), null);
+                } catch (e) {
+                    return callback(null, { statusCode: 500, statusMessage: 'Error Parsing JSON: ' + e});
+                }
             }
+            return callback(null, { statusCode: response.statusCode, statusMessage: response.statusMessage});
         });
     });
 
