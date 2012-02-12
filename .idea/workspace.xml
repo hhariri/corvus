@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e366a52d-5f38-4059-a0a3-f06705f7d991" name="Default" comment="" />
+    <list default="true" id="e366a52d-5f38-4059-a0a3-f06705f7d991" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/todo.txt" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/corvus.js" afterPath="$PROJECT_DIR$/corvus.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/getDocumentTests.js" afterPath="$PROJECT_DIR$/test/getDocumentTests.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/putDocumentTests.js" afterPath="$PROJECT_DIR$/test/putDocumentTests.js" />
+    </list>
     <ignored path="corvus.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -22,10 +29,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="corvus.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="corvus.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/corvus.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="6" selection-start="1291" selection-end="1291" vertical-scroll-proportion="0.24313186">
+            <state line="53" column="0" selection-start="1240" selection-end="1240" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -61,16 +68,16 @@
       <file leaf-file-name="getDocumentTests.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/getDocumentTests.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="79" selection-start="765" selection-end="765" vertical-scroll-proportion="0.0">
+            <state line="13" column="42" selection-start="511" selection-end="511" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="putDocumentTests.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="putDocumentTests.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/putDocumentTests.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="49" selection-start="306" selection-end="306" vertical-scroll-proportion="0.0">
+            <state line="14" column="42" selection-start="646" selection-end="646" vertical-scroll-proportion="0.4573304">
               <folding />
             </state>
           </provider>
@@ -115,9 +122,10 @@
         <option value="$PROJECT_DIR$/test/docTests.js" />
         <option value="$PROJECT_DIR$/test/documentStoreTests.js" />
         <option value="$PROJECT_DIR$/test/documentStoreInitTests.js" />
+        <option value="$PROJECT_DIR$/todo.txt" />
+        <option value="$PROJECT_DIR$/corvus.js" />
         <option value="$PROJECT_DIR$/test/getDocumentTests.js" />
         <option value="$PROJECT_DIR$/test/putDocumentTests.js" />
-        <option value="$PROJECT_DIR$/corvus.js" />
       </list>
     </option>
   </component>
@@ -178,7 +186,7 @@
       </profile-state>
     </entry>
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -228,6 +236,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="corvus" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="corvus" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="node_modules" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -338,14 +360,35 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView" selected-index="0">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="874" extended-state="0" />
     <editor active="true" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32980132" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980132" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32956952" sideWeight="0.0" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32956952" sideWeight="0.6701987" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
@@ -395,7 +438,7 @@
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <option name="CREATE_PATCH_EXPAND_DETAILS_DEFAULT" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" />
+    <option name="LAST_COMMIT_MESSAGE" value="Got code restructured and proper now" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -408,6 +451,8 @@
     <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
+    <MESSAGE value="TODO" />
+    <MESSAGE value="Got code restructured and proper now" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -446,23 +491,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/corvus.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="0" selection-start="1240" selection-end="1240" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test/getDocumentTests.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="79" selection-start="765" selection-end="765" vertical-scroll-proportion="0.0">
+        <state line="13" column="42" selection-start="511" selection-end="511" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/putDocumentTests.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="49" selection-start="306" selection-end="306" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/corvus.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="6" selection-start="1291" selection-end="1291" vertical-scroll-proportion="0.24313186">
+        <state line="14" column="42" selection-start="646" selection-end="646" vertical-scroll-proportion="0.4573304">
           <folding />
         </state>
       </provider>

@@ -1,2 +1,0 @@
-Refactor to use common request method
-Refactor to exclude requirement of adding /docs/ to path

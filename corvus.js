@@ -7,7 +7,6 @@
  */
 
 var http = require('http');
-var sys = require('sys');
 
 var corvus = exports;
 
@@ -19,31 +18,60 @@ corvus.DocumentStore = function DocumentStore(host, port, database) {
     this.database = database || 'default';
 
 };
-
+// TODO: Refactor to use common request method
+// TODO: Refactor to not require /docs/
 corvus.DocumentStore.prototype.getDoc = function (docId, callback) {
+
+    function normalizeDocPath(docId) {
+
+        if (docId.slice(0, '/docs'.length).toUpperCase() != '/DOCS') {
+            if (docId.slice(0, 1) == '/') {
+                return '/docs' + docId;
+            } else {
+                return '/docs/' + docId;
+            }
+        } else {
+            return docId;
+        }
+    }
 
     var options = {
         host: this.host,
         port: this.port,
-        path: docId,
+        path: normalizeDocPath(docId),
         method: 'GET'
     };
-    var request = http.request(options, function (res) {
+    var request = http.request(options);
 
-        res.setEncoding('utf8');
+    request.on('response', function (response) {
 
-        res.on('data', function (chunk) {
-            if (res.statusCode === 200) {
-                callback(JSON.parse(chunk), null);
+        var obj;
+        var error = false;
+
+        response.setEncoding('utf8');
+
+        response.on('data', function (chunk) {
+
+            try {
+                obj = JSON.parse(chunk);
+                error = false;
+            } catch (e) {
+                error = true;
             }
-            else {
-                callback(null, { 'StatusCode': res.statusCode, 'StatusMessage': chunk});
+        });
+
+        // TODO: Improve this. Distinguish between bad parsing of JSON and other errors
+        response.on('end', function () {
+            if (error || response.statusCode !== 200) {
+                callback(null, { statusCode: response.statusCode, statusMessage: response.statusMessage});
+            } else {
+                callback(obj, null);
             }
         });
     });
 
     request.on('error', function (error) {
-       callback(null, error);
+        callback(null, error);
     });
     request.end();
 
@@ -70,11 +98,11 @@ corvus.DocumentStore.prototype.putDoc = function (docId, doc, callback) {
                 callback(null, { 'StatusCode': res.statusCode, 'StatusMessage': chunk});
             }
         });
+        res.on('error', function (error) {
+           callback(null, error);
+        });
     });
 
-    request.on('error', function (error) {
-       callback(null, error);
-    });
 
     request.write(JSON.stringify(doc));
     request.end();
