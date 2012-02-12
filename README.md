@@ -1,7 +1,7 @@
 # Corvus
-## An NodeJS HTTP Client for RavenDB
+## An Asynchronous NodeJS HTTP Client for RavenDB
 
-Corvus is a node package for accessing RavenDB using its HTTP API
+Corvus is a node package for accessing RavenDB using its HTTP API.
 
 
 ### Installation
