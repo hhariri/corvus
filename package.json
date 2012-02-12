@@ -1,0 +1,14 @@
+{
+  "name"            : "corvus",
+  "description"     : "An HTTP client for RavenDB",
+  "url"             : "http://github.com/hhariri/corvus",
+  "keywords"        : ["ravendb", "http"],
+  "author"          : "Hadi Hariri <mail@hadihariri.com>",
+  "contributors"    : [],
+  "dependencies"    : {},
+  "devDependencies" : { "mocha": "0.3.6"},
+  "version"         : "0.1",
+  "main"            : "./lib",
+  "directories"     : { "test": "./test" },
+  "engines"         : { "node": ">=0.6.7" }
+}

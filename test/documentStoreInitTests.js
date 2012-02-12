@@ -1,4 +1,4 @@
-var corvus = require('../corvus.js'),
+var corvus = require('../lib/corvus.js'),
     assert = require('assert');
 
 
