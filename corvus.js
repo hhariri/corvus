@@ -18,6 +18,13 @@ corvus.DocumentStore = function DocumentStore(host, port, database) {
     this.database = database || 'default';
 
 };
+
+function Error (statusCode, statusMessage) {
+    this.statusCode = statusCode;
+    this.statusMessage = statusMessage;
+    return this;
+}
+
 // TODO: Refactor to use common request method
 corvus.DocumentStore.prototype.getDoc = function (docId, callback) {
 
@@ -58,10 +65,10 @@ corvus.DocumentStore.prototype.getDoc = function (docId, callback) {
                 try {
                     return callback(JSON.parse(body), null);
                 } catch (e) {
-                    return callback(null, { statusCode: 500, statusMessage: 'Error Parsing JSON: ' + e});
+                    return callback(null, new Error(500, 'Error Parsing JSON: ' + e));
                 }
             }
-            return callback(null, { statusCode: response.statusCode, statusMessage: response.statusMessage});
+            return callback(null, new Error(response.statusCode, response.StatusMessage));
         });
     });
 
